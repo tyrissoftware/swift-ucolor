@@ -24,5 +24,18 @@ class UColorTests: XCTestCase {
 		XCTAssertEqual(UColor.blue, UColor(red: 0, green: 0, blue: 1))
 	}
 	
+	func testHexString() {
+
+			XCTAssertEqual(
+				UColor.white.hexString(includeOpacity: false),
+				"#FFFFFF"
+			)
+			
+			XCTAssertEqual(
+				UColor.white.hexString(includeOpacity: true),
+				"#FFFFFFFF"
+			)
+			
+		}
 	
 }
