@@ -60,4 +60,11 @@ class UColorTests: XCTestCase {
 		XCTAssertEqual(colorHex4,sampleColor)
 	}
 	
+	func testRRGGBB2(){
+		
+		let colorHex6 = UColor(hex6: 13)
+		let sampleColor = UColor(red: 0.0, green: 0.0, blue: 0.050980392156862744, opacity: 1.0, space: .sRGB)
+		XCTAssertEqual(colorHex6,sampleColor)
+	}
+	
 }
