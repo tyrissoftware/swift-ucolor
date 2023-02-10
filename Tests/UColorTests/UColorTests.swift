@@ -67,4 +67,11 @@ class UColorTests: XCTestCase {
 		XCTAssertEqual(colorHex6,sampleColor)
 	}
 	
+	func testColorWithPrefixNil(){
+		
+		let sampleColor = UColor(rgba: "red")
+		XCTAssertNil(sampleColor)
+		
+	}
+	
 }
