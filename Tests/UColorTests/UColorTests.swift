@@ -26,18 +26,18 @@ class UColorTests: XCTestCase {
 	}
 	
 	func testHexString() {
-
-			XCTAssertEqual(
-				UColor.white.hexString(includeOpacity: false),
-				"#FFFFFF"
-			)
-			
-			XCTAssertEqual(
-				UColor.white.hexString(includeOpacity: true),
-				"#FFFFFFFF"
-			)
-			
-		}
+		
+		XCTAssertEqual(
+			UColor.white.hexString(includeOpacity: false),
+			"#FFFFFF"
+		)
+		
+		XCTAssertEqual(
+			UColor.white.hexString(includeOpacity: true),
+			"#FFFFFFFF"
+		)
+		
+	}
 	
 	func testWithOpacity(){
 		
@@ -104,4 +104,12 @@ class UColorTests: XCTestCase {
 		let sampleColor = UColor(rgba: "#\(hexstring)")
 		XCTAssertNil(sampleColor)
 	}
+	
+	func testUColorSpaceSrgb(){
+		
+		let contrastColor = UColor(hex3: 13, space: .sRGB)
+		
+		XCTAssertEqual(contrastColor.swiftUI, UColor(hex3: 13, space: .sRGB).swiftUI)
+	}
+	
 }
