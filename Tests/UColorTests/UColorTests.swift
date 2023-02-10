@@ -69,9 +69,18 @@ class UColorTests: XCTestCase {
 	
 	func testColorWithPrefixNil(){
 		
-		let sampleColor = UColor(rgba: "red")
+		let sampleColor = UColor(rgba: "240")
 		XCTAssertNil(sampleColor)
 		
 	}
+	
+	func testColorWithPrefixSwitchCase3(){
+		
+		let hexstring = "240"
+		let sampleColor = UColor(rgba: "#\(hexstring)")
+		let contrastColor = UColor(red: 0.13333333333333333, green: 0.26666666666666666, blue: 0.0, opacity: 1.0, space: .sRGB)
+		XCTAssertEqual(sampleColor,contrastColor)
+	}
+	
 	
 }
