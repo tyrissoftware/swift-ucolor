@@ -112,4 +112,11 @@ class UColorTests: XCTestCase {
 		XCTAssertEqual(contrastColor.swiftUI, UColor(hex3: 13, space: .sRGB).swiftUI)
 	}
 	
+	func testUColorSpaceSrgbLinear(){
+		
+		let contrastColor = UColor(hex3: 13, space: .sRGBLinear)
+		
+		XCTAssertEqual(contrastColor.swiftUI, UColor(hex3: 13, space: .sRGBLinear).swiftUI)
+	}
+	
 }
