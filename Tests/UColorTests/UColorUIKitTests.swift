@@ -5,6 +5,11 @@ import XCTest
 
 final class UColorUIKitTests: XCTestCase {
 	
-
+	func testUIKitConvertion(){
+		let color = UColor(hex3: 13)
+		let converted = UColor(uiKit: color.uiKit)
+		
+		XCTAssertEqual(color,converted)
+	}
 }
 #endif
