@@ -32,8 +32,7 @@ creating the color.
 
 ### withOpacity
 
-This function is an extension of Ucolor that takes a double as a parameter and returns the 
-opacity value of a given color.
+Ucolor → UColor
 
 ### hexString
 

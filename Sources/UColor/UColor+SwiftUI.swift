@@ -2,8 +2,7 @@ import Foundation
 import SwiftUI
 
 extension UColorSpace {
-	@available(iOS 13.0, *)
-	@available(macOS 10.15, *)
+	@available(macOS 10.15, iOS 13.0, *)
 	public var swiftUI: SwiftUI.Color.RGBColorSpace {
 		switch self {
 		case .sRGB:
@@ -17,8 +16,7 @@ extension UColorSpace {
 }
 
 extension UColor {
-	@available(iOS 13.0, *)
-	@available(macOS 10.15, *)
+	@available(macOS 10.15, iOS 13.0, *)
 	public var swiftUI: SwiftUI.Color {
 		Color(space.swiftUI, red: red, green: green, blue: blue, opacity: opacity)
 	}

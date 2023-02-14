@@ -3,7 +3,6 @@ import XCTest
 import SwiftUI
 @testable import UColor
 
-
 class UColorTests: XCTestCase {
 	func testHex() {
 		let color = UColor(rgba: "#9933ccff")

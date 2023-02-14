@@ -2,12 +2,9 @@
 
 ## Motivation
 
-This library was built with the purpose of converting SwiftUI colors more easily. By doing
-so, the main project does not need to add extra fuzzy code that makes it heavier and less
-readable. Several problems arise when comparing UIColor and NSColor as they are not structs.
-Some cases include difficulty accessing color variables due to not being able to serialize 
-them. To avoid that, this library uses simple models that allow easy transformations of 
-functionalities. 
+This library was built with the purpose of defining a model that could allow for easy 
+convertions between colors. Allowing, thus, serializations, comparisons, etc. 
+One such case would be converting a UIColor into a NSColor.
 
 ## Getting Started
 
