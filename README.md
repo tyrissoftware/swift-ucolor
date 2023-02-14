@@ -4,7 +4,7 @@
 
 This library was built with the purpose of defining a model that could allow for easy 
 convertions between colors. Allowing, thus, serializations, comparisons, etc. 
-One such case would be converting a UIColor into a NSColor.
+One such case would be converting into UIColor or NSColor.
 
 ## Getting Started
 
