@@ -1,6 +1,7 @@
 @testable import UColor
 import XCTest
 
+@available(iOS 13.0, *)
 final class UColorSwiftUITests: XCTestCase {
 
 	func testUColorSpaceSrgb(){

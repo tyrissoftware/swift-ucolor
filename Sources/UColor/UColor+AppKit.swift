@@ -1,6 +1,5 @@
 #if canImport(AppKit)
 import AppKit
-import UIKit
 
 extension UColor {
 	public var appKit: NSColor {

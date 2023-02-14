@@ -7,7 +7,7 @@ final class UColorAppKitTests: XCTestCase {
 	
 	func testUColorSpaceAppKit(){
 		
-		let color = UColor()
+		let color = UColor(red: 1, green: 0, blue: 0.5)
 		let converted = UColor(appKit: color.appKit)
 		
 		XCTAssertEqual(color,converted)		
