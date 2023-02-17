@@ -41,7 +41,7 @@ pipeline {
 
 def sendSuccessMessageToMatterMost() {
 	try {
-	    mattermostSend channel: "#ios_jenkins", color: "good", message: "@channel Success - ${env.JOB_NAME} #${env.BUILD_NUMBER} (${env.BUILD_URL})";
+	    mattermostSend channel: "#ios_jenkins", color: "good", message: "Success - ${env.JOB_NAME} #${env.BUILD_NUMBER} (${env.BUILD_URL})";
 	} catch (ex) {
 		echo "Error sending message to mattermost : ${ex}"
 	}
@@ -49,7 +49,7 @@ def sendSuccessMessageToMatterMost() {
 
 def sendErrorMessageToMatterMost() {
 	try {
-	    mattermostSend channel: "#ios_jenkins", color: "danger", message: "@channel Pipeline failed - ${env.JOB_NAME} #${env.BUILD_NUMBER} (${env.BUILD_URL})";
+	    mattermostSend channel: "#ios_jenkins", color: "danger", message: "Pipeline failed - ${env.JOB_NAME} #${env.BUILD_NUMBER} (${env.BUILD_URL})";
 	} catch (ex) {
 		echo "Error sending message to mattermost : ${ex}"
 	}
