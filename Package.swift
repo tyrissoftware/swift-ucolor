@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "UColor",
+    name: "swift-ucolor",
 	 platforms: [
 		 .iOS(.v11),
 		 .macOS(.v10_15)
