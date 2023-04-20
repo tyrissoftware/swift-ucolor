@@ -10,7 +10,7 @@ One such case would be converting into UIColor or NSColor.
 
 To start using the main features of the library make sure to install it on the main project.
 The library repository can be found in the following link:
-https://bitbucket.org/damonfer/swift-ucolor/src/master/
+https://bitbucket.org/damonfer/swift-ucolor
 
 ## Documentation
 

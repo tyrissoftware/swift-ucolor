@@ -1,9 +1,9 @@
 @testable import UColor
 import XCTest
 
-@available(iOS 13.0, *)
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, *)
 final class UColorSwiftUITests: XCTestCase {
-
+	
 	func testUColorSpaceSrgb(){
 		
 		let contrastColor = UColor(hex3: 13, space: .sRGB)
@@ -24,4 +24,4 @@ final class UColorSwiftUITests: XCTestCase {
 		
 		XCTAssertEqual(contrastColor.swiftUI, UColor(hex3: 13, space: .displayP3).swiftUI)
 	}
-   }
+}
