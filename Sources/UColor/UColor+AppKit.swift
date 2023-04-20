@@ -1,15 +1,15 @@
-#if canImport(UIKit)
-import UIKit
+#if canImport(AppKit)
+import AppKit
 
 extension UColor {
-	public var uiKit: UIColor {
-		UIColor(red: CGFloat(red), green: CGFloat(green), blue: CGFloat(blue), alpha: CGFloat(opacity))
+	public var appKit: NSColor {
+		NSColor(red: CGFloat(red), green: CGFloat(green), blue: CGFloat(blue), alpha: CGFloat(opacity))
 	}
 }
 
 extension UColor {
 
-	public init(uiKit color: UIColor) {
+	public init(appKit color: NSColor) {
 		
 		var red: CGFloat = 0
 		var green: CGFloat = 0
