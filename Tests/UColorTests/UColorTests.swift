@@ -25,7 +25,6 @@ class UColorTests: XCTestCase {
 	}
 	
 	func testHexString() {
-		
 		XCTAssertEqual(
 			UColor.white.hexString(includeOpacity: false),
 			"#FFFFFF"
@@ -35,15 +34,11 @@ class UColorTests: XCTestCase {
 			UColor.white.hexString(includeOpacity: true),
 			"#FFFFFFFF"
 		)
-		
 	}
 	
-	func testWithOpacity(){
-		
+	func testWithOpacity() {
 		let colorSample = UColor(red: 0.0, green: 0.0, blue: 0.0, opacity: 0.0)
 		let colorFunction = colorSample.withOpacity(colorSample.opacity)
 		XCTAssertEqual(colorSample,colorFunction)
 	}
-	
-	
 }
