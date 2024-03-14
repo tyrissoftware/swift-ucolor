@@ -32,17 +32,10 @@ creating the color.
 
 ### withOpacity
 
-Ucolor → UColor
+UColor → UColor
 
 ### hexString
 
 This function takes a boolean as a parameter and returns a string with the value of the 
 red, blue and green color properties. Depending on the boolean value it can also return the 
 opacity of the color.
-
-### campled
-
-This function is  called by the hexString function to help it compare the red, blue and 
-green values of a color taking into account the range of the values it receives as a 
-parameter.
-
