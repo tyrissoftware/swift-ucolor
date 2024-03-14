@@ -37,7 +37,7 @@ extension UColor {
 		let divisor = Double(255)
 		self.red = Double((hex6 & 0xFF0000) >> 16) / divisor
 		self.green = Double((hex6 & 0x00FF00) >>  8) / divisor
-		self.blue = Double( hex6 & 0x0000FF       ) / divisor
+		self.blue = Double( hex6 & 0x0000FF) / divisor
 		self.opacity = opacity
 		self.space = space
 	}

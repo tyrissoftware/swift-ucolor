@@ -32,6 +32,18 @@ public struct UColor: Equatable, Hashable, Codable {
 }
 
 extension UColor {
+	public init(
+		red: Double,
+		green: Double,
+		blue: Double,
+		alpha: Double = 1,
+		space: UColorSpace = .sRGB
+	) {
+		self.init(red: red, green: green, blue: blue, opacity: alpha, space: space)
+	}
+}
+
+extension UColor {
 	public func withOpacity(
 		_ opacity: Double
 	) -> Self {
