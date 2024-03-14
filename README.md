@@ -10,7 +10,7 @@ color management. A UColor can be serialized, compared, and modified in a platfo
 Use it with swift package manager:
 
 ```swift
-.package(url: "https://github.org/tyrissoftware/swift-ucolor.git", from: "0.1.1")
+.package(url: "https://github.org/tyrissoftware/swift-ucolor.git", from: "0.1.2")
 ```
 
 ## Documentation
