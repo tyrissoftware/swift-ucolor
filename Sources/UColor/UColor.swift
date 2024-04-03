@@ -36,7 +36,7 @@ extension UColor {
 		red: Double,
 		green: Double,
 		blue: Double,
-		alpha: Double = 1,
+		alpha: Double,
 		space: UColorSpace = .sRGB
 	) {
 		self.init(red: red, green: green, blue: blue, opacity: alpha, space: space)
