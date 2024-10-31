@@ -1,13 +1,13 @@
 import Foundation
 
-public enum UColorSpace: String, Equatable, Hashable, Codable {
+public enum UColorSpace: String, Equatable, Hashable, Codable, Sendable {
 	case sRGB
 	case sRGBLinear
 	case displayP3
 }
 
 /// Universal Color model
-public struct UColor: Equatable, Hashable, Codable {
+public struct UColor: Equatable, Hashable, Codable, Sendable {
 	public var space: UColorSpace
 
 	public var red: Double
